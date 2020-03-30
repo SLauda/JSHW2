@@ -12,36 +12,59 @@
 
 function calculateDiscount(redemption) {
   let discount;
-
-  //PLACE YOUR CODE HERE
-
-  return discount;
+  if (redemption >= 0 && redemption <= 350){
+    discount = (0);
+  } else if (redemption >= 351 && redemption <= 1350){
+    discount = (15);
+  } else if (redemption >= 1351 && redemption <= 2700){
+    discount = (30);
+  } else if (redemption >= 2701 && redemption <= 6500){
+      discount = (45);
+  }
+  return discount
 }
 
-/** TODO
- * implement factorial algorithm using for, while, do..while operators
- */
+// /** TODO
+//  * implement factorial algorithm using for, while, do..while operators
+//  */
 {
-  const i = 10; //10! = 3628800
+//   const i = 10; //10! = 3628800
+
+const i = 10;
+    res = 1;
+while (i > 0) {
+res*=i;
+i--; }
+console.log('Результат:' + res)
 }
 
-/**
- * return concatenated string from an array of substring
- */
+// /**
+//  * return concatenated string from an array of substring
+//  */
 {
-  const substr = ["I", " love", " JS"];
+ const substr = ["I", " love", " JS"];
+for (let elem of substr ){
+
+console.log (str.substr(0))
 }
 
-/**
- * calculate a total of income of certain person
- */
+// /**
+//  * calculate a total of income of certain person
+//  */
 {
-  const personIncomes = {
-    salary: 1985,
-    rent: -600,
-    interestOnDeposit: 250,
-    otherExpences: -300
-  };
-}
+    const personIncomes = {
+    salary: 1985;
+    rent: -600;
+    interestOnDeposit: 250;
+    otherExpences: -300;
+	for (let ele in personIncomes)
+	const total = 0;
+    const i = 0; 
+	while (i > 0) {
+total+=i;
+i++; }
+            console.log(+total)
+ };
+ }
 
-module.exports = calculateDiscount;
+// module.exports = calculateDiscount;
